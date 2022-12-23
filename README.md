@@ -44,6 +44,7 @@ set CONF_FILE path where you have stored nginx.conf file in local directory. (th
     ./driver.sh
 
 It will show menu based program like given below:
+
     ------------------------------------------------------------------------------
                                 M A I N - M E N U
     ------------------------------------------------------------------------------
@@ -55,6 +56,7 @@ It will show menu based program like given below:
     Enter your choice [1-4] :
 
 Enter your choice and then check in logs of nginx service if configuration is updated successfully. It will show output like give below:
+
     kubectl logs -n nath nath-nginx-55fcfc8b76-vbr67
 
     Output:
