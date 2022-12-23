@@ -11,7 +11,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/pw/nathnginx"
+    path: "/mnt/nathnginx"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1

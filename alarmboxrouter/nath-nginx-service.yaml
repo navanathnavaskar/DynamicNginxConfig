@@ -5,7 +5,7 @@ metadata:
   namespace: nath 
 spec:
   externalIPs:
-    - "10.61.2.129"
+    - "10.10.10.10"
   selector:
     app: nath-nginx
   ports:
@@ -38,7 +38,7 @@ spec:
             - name: NGINX_ENVSUBST_TEMPLATE_SUFFIX
               value: .conf
           name: nginx
-          #image: nginxinc/nginx-unprivileged:1.21.6
+          # Use newly created image
           image: nginx-auto-reload:local
           imagePullPolicy: IfNotPresent
           volumeMounts:
