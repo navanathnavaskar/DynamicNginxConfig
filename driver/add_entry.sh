@@ -1,10 +1,11 @@
 #!/usr/bin/bash
 
 CWD=$(pwd)
-CONF_FILE="/mnt/pw/nathnginx/nginx.conf"
 DB_FILE=$CWD"/db.txt"
 alarmbox_token=$1
 alarmbox_ip=$2
+
+source $CWD/.CONF
 
 echo -e "Step 1 - Check if alarmbox is already added."
 

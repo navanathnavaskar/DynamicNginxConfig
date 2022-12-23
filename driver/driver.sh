@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 CWD=$(pwd)
-CONF_FILE="/mnt/pw/nathnginx/nginx.conf"
 ADD_SCRIPT=$CWD"/add_entry.sh"
 REMOVE_SCRIPT=$CWD"/remove_entry.sh"
 DB_FILE=$CWD"/db.txt"
