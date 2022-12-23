@@ -1,0 +1,29 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: nathnginx-volume
+  labels:
+    type: nathnginx-volume
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/pw/nathnginx"
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: nathnginx-volume-claim
+  namespace : nath
+spec:
+  storageClassName: manual
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 1Gi
+  selector:
+    matchLabels:
+      type: nathnginx-volume
