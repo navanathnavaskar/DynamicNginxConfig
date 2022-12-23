@@ -10,7 +10,7 @@ In order to smooth this process of updating nginx configuration, I have used ope
 1. docker
 2. kubernates (k8s)
 3. copy code to your local dirctory.
-4. We are using mount volume hence copy nginx.conf file to "/mnt/nathnginx" directory. Create directory if not exist.
+4. We are using mount volume hence copy "conf/nginx.conf" file to "/mnt/nathnginx" directory. Create directory if not exist.
 
 ## Steps to use:
 ### 1. Build image from openresty 
